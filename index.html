@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Liberty Seguros - Loading or spinner</title>
+</head>
+<body>
+    <style id="applicationStylesheet" type="text/css">
+
+body {
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}        
+    
+.overlay-flex {
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-container, .overlay-wrapper {
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Color de fondo de cortinilla*/
+.overlay-backdrop {
+    background: #1a1446;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: auto;
+}
+
+.overlay-container, .overlay-wrapper {
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+      
+        </style>
+<div class="container">
+    <div class="overlay-container">
+        <div class="overlay-backdrop">
+        </div><div class="overlay-wrapper">
+            <div class="overlay-flex">
+                <img src="elements/loader.584a8931.svg" alt="Cargando...">
+                <img src="elements/liberty-arm-yellow.88bffb2c.svg" alt="Cargando..." class="position-absolute">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
